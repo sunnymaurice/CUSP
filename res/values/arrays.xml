@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selectPLUtype">
+        <item name="Fruit">水果</item>
+        <item name="Vege">蔬菜</item>
+        <item name="Meat">肉類</item>
+        <item name="Seafood">海鮮</item>
+        <item name="Dish">熟食</item>
+        <item name="Other">雜項</item>
+    </string-array>
+    <string-array name="pluSelectPLUTypeValues">
+        <item name="Fruit">Fruit</item>
+        <item name="Vege">Vegetable</item>
+        <item name="Meat">Meat</item>
+        <item name="Seafood">Seafood</item>
+        <item name="Dish">Dish</item>
+        <item name="Other">Others</item>
+    </string-array>
+     
+</resources>

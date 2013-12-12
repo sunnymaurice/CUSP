@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SystemMainActivity" >
+	
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"       
+        android:orientation="horizontal" >
+
+         <!-- 使用者帳號欄位 -->
+    	<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginBottom="5dip" 
+        	android:text="@string/loginUserLabel"
+    	/>
+
+    	<EditText
+        	android:id="@+id/edtUserName"
+        	android:layout_width="80dp"
+        	android:layout_height="wrap_content"
+        	android:layout_marginBottom="5dip"
+        	android:inputType="text"       
+        	android:text=""
+    	/> 
+    	<!-- 密碼欄位 -->
+    	<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"    
+        	android:layout_marginBottom="5dip"      
+        	android:text="@string/loginPasswordLabel"
+    	/>
+    
+    	<EditText
+        	android:id="@+id/edtPassword"
+        	android:layout_width="80dp"
+        	android:layout_height="wrap_content"
+        	android:layout_marginBottom="5dip" 
+        	android:inputType="textPassword"        
+        	android:text=""
+    	/>
+          		           
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"            
+            android:onClick="loginHandler"
+            android:text="@string/loginBtnText" />
+       <!--     
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"                  
+            android:onClick="UserLogout"
+            android:text="@string/logoutBtnText" />
+		-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="horizontal" android:id="@+id/linearLayout2">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:visibility="visible" />                
+    </LinearLayout>    
+</RelativeLayout>

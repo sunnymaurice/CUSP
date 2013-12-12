@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableLayout
+        android:id="@+id/opOutputTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/textPluName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/pluNameLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textPluNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/pluNumLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/totalWeightLable"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textUnitPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/unitPriceLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textTotalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/totalPriceLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+        </TableRow>           
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textPluNameDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/palegreen"                
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/textPluNumDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/palegreen"                
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/textWeightDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/palegreen"                
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/textUnitPriceDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/ivory"                
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textTotalPriceDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/ivory"                
+                android:text="" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textTare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/tareWeightLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+            
+            <TextView
+                android:id="@+id/textStableSymbol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/stableSymbolLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textTemperature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/temperatureLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />           
+<!--  
+            <TextView
+                android:id="@+id/textHorzonX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/horizontalXLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textHorzonY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/horizontalYLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+-->          
+			<TextView
+                android:id="@+id/textGrossWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/grosssWeightLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textMaxCapacity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/maxCapacityLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+        </TableRow>           
+        
+         <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textTareWeightDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/lightblue"                
+                android:text="" /> 
+             
+            <TextView
+                android:id="@+id/textStableDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/lightblue"                
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textTemperatureDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/lightblue"              
+                android:text="" />
+<!--  
+            <TextView
+                android:id="@+id/textHorzonXDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/lightblue"               
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textHorzonYDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/lightblue"                
+                android:text="" />
+-->
+			<TextView
+                android:id="@+id/textGrossDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/lightblue"               
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textMaxCapacityDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="@color/lightblue"                
+                android:text="" />                           
+        </TableRow>
+        
+    </TableLayout>
+   
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+         <LinearLayout 
+            android:layout_width="0dp" 
+            android:layout_height="match_parent" 
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:background="@color/mintcream">
+    			<GridView
+        			android:id="@+id/pluGridView"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"      
+        			android:columnWidth="50dp"
+        			android:fadeScrollbars="true"
+        			android:gravity="center"
+        			android:horizontalSpacing="1dp"
+        			android:numColumns="3"
+        			android:stretchMode="columnWidth"
+        			android:verticalSpacing="0dp" />
+    	</LinearLayout>
+    	<RadioGroup 
+            android:layout_width="0dp" 
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15" 
+            android:orientation="vertical"
+            android:background="@color/lightgreen">
+            <RadioButton 
+                android:text="@string/typeFruit"
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content"/>
+            <RadioButton 
+                android:text="@string/typeVege"
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content"/>
+            <RadioButton 
+                android:text="@string/typeMeat"
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content"/>
+             <RadioButton 
+                android:text="@string/typeFish"
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content"/>
+             <RadioButton 
+                android:text="@string/typeDish"
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content"/>
+             <RadioButton 
+                android:text="@string/typeOther"
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content"/>
+              <RadioButton 
+                android:text="@string/typeCandy"
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content"/>
+              <RadioButton 
+                android:text="@string/typeBread"
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content"/>             
+        </RadioGroup>
+    	<LinearLayout 
+             android:layout_width="0dp" 
+             android:layout_height="match_parent" 
+             android:layout_weight="0.45"
+             android:orientation="vertical">
+             <LinearLayout 
+                 android:layout_width="match_parent" 
+                 android:layout_height="wrap_content"
+                 android:gravity="center_horizontal"
+                 android:background="@color/lightgrey">	
+    			<SearchView
+        			android:id="@+id/pluSearchView"
+        			android:layout_width="150dp"
+        			android:layout_height="50dp" >     
+    			</SearchView>
+    		</LinearLayout>	
+    		<LinearLayout 
+                 android:layout_width="match_parent" 
+                 android:layout_height="wrap_content"
+                 android:gravity="center_horizontal"
+                 android:orientation="vertical"
+                 android:background="@color/cornsilk">
+    			
+    		    <TextView  
+	    			android:id="@+id/txtStack"
+	    			android:layout_width="fill_parent"
+	    			android:layout_height="wrap_content" 
+	   				android:textSize="12sp"
+	    			android:gravity="right"
+	    			android:background="@drawable/stackview"
+	    			android:layout_marginTop = "1sp"
+	    			android:layout_marginLeft = "2sp"
+	    			android:layout_marginRight = "2sp"
+    				android:textColor="@color/darkgrey"/>
+   
+    			<TextView  
+    				android:id="@+id/txtInput"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content" 
+    				android:textSize="15sp"
+    				android:gravity="right"
+    				android:background="@drawable/inputview"
+    				android:textColor="@color/darkgreen"
+    				android:layout_marginLeft = "2sp"
+   					android:layout_marginRight = "2sp"/>
+    			
+    			<GridView 
+    				android:id="@+id/grdKeypadButtons"
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:columnWidth="40dp"
+    				android:numColumns="4"    				
+    				android:verticalSpacing="1dp"
+    				android:horizontalSpacing="1dp"
+    				android:stretchMode="columnWidth"
+    				android:gravity="center"/>
+    			
+    		</LinearLayout>
+    	</LinearLayout>
+    </LinearLayout>
+	<!-- For test service only -->
+    <!--  
+    <Button
+        android:id="@+id/stopServiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pluSearchView"
+        android:layout_below="@+id/startServiceButton"
+        android:gravity="center"
+        android:onClick="stopService"        
+        android:text="@string/stopServiceButton" />
+
+    <Button
+        android:id="@+id/startServiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stopServiceButton"
+        android:layout_below="@+id/pluSearchView"
+        android:gravity="center"
+        android:onClick="startService"
+        android:text="@string/startServiceButton" />
+    -->
+</LinearLayout>
+
+</ScrollView>

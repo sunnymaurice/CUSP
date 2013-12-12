@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CUSP_Operator</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_settings">PLU Settings</string>
+<!-- System Main Activity String -->    
+    <string name="loginUserLabel">帳號:</string>
+    <string name="loginPasswordLabel">密碼:</string>
+    <string name="loginBtnText">登入</string>
+    <string name="title_activity_operator">OperatorActivity</string>    
+<!-- Operator Activity String -->
+	<string name="operator_activity_title">Operator Workstation v1.2</string>
+	<string name="pluNameLabel">品名</string>
+	<string name="pluNumLabel">PLU #</string>
+	<string name="totalWeightLable">重量 (g)</string>	
+	<string name="unitPriceLabel">單價</string>
+	<string name="totalPriceLabel">總價</string>	
+<!--    	
+  	<string name="stopServiceButton">停止Client</string>
+  	<string name="startServiceButton">開啟Client</string>
+-->
+	<string name="tareWeightLabel">皮重</string>
+<!-- Temporary Display -->	
+	<string name="stableSymbolLabel">穩定</string>  	
+	<string name="temperatureLabel">溫度</string>
+	<string name="horizontalXLabel">水平X</string>
+	<string name="horizontalYLabel">水平Y</string>	
+	<string name="grosssWeightLabel">零值重</string>
+	<string name="maxCapacityLabel">最大量程</string>
+<!-- Application Settings -->
+	<string name="systemOpMode">Operation Mode</string>	
+		
+<!-- Product Catagories -->
+	<string name="typeFruit">水果</string>
+	<string name="typeVege">蔬菜</string>
+	<string name="typeMeat">肉類</string>
+	<string name="typeFish">海鮮</string>
+	<string name="typeDish">熟食</string>
+	<string name="typeOther">雜項</string>
+	<string name="typeCandy">糖果</string>
+	<string name="typeBread">麵包</string>
+<!-- Network IP seting -->
+	<string name="pref_ip_profile">Network IP Profile</string>
+	<string name="pref_IP">Set IP address</string>
+	<string name="pref_IP_summary">Setup the IP address of this scale</string>
+	<string name="pref_Mask">Set Netmask</string>
+	<string name="pref_Mask_summary">Setup the IP network mask of this scale</string>
+		
+<!-- PLU default setings  -->
+	<string name="plu_type_setting">PUL Type Menu</string>
+	<string name="plu_type_title">Choose a PLU type</string>		
+	<string name="pref_type_summary">Setup a defaul type of PLU loaded in the starting page.</string>
+	<string name="pref_title_Fruit">水果</string>
+	<string name="pref_title_Vege">蔬菜</string>
+	<string name="pref_title_Meat">肉類</string>
+	<string name="pref_title_Seafood">海鮮</string>
+	<string name="pref_title_Dish">熟食</string>
+	<string name="pref_title_Other">雜項</string>
+<!-- Error message -->
+	<string name="lost_connection">失去連線</string>
+	<string name="connection_error">無法連線!檢查網路連線.</string>
+    <string name="xml_error">Error parsing XML.</string>	
+</resources>

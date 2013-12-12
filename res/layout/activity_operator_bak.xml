@@ -1,0 +1,317 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OpOperatorActivity" >
+
+    <TableLayout
+        android:id="@+id/opOutputTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/textPluName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/pluNameLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textPluNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/pluNumLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/totalWeightLable"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textUnitPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/unitPriceLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textTotalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/totalPriceLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+        </TableRow>           
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textPluNameDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#93FF93"                
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/textPluNumDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#93FF93"                
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/textWeightDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#93FF93"                
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/textUnitPriceDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFDF"                
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textTotalPriceDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFDF"                
+                android:text="" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textTare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/tareWeightLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+            
+            <TextView
+                android:id="@+id/textStableSymbol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/stableSymbolLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textTemperature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/temperatureLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />           
+
+            <TextView
+                android:id="@+id/textHorzonX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/horizontalXLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textHorzonY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/horizontalYLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+          
+        </TableRow>           
+        
+         <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textTareWeightDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#ACD6FF"                
+                android:text="" /> 
+             
+            <TextView
+                android:id="@+id/textStableDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#ACD6FF"                
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textTemperatureDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#ACD6FF"              
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textHorzonXDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#ACD6FF"               
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textHorzonYDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.2"
+                android:background="#ACD6FF"                
+                android:text="" />           
+        </TableRow>
+        
+    </TableLayout>
+   
+    <GridView
+        android:id="@+id/pluGridView"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opOutputTableLayout"
+        android:columnWidth="50dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" />
+    		
+    <SearchView
+        android:id="@+id/pluSearchView"
+        android:layout_width="500dp"
+        android:layout_height="40dp" 
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/opOutputTableLayout" >
+     
+    </SearchView>
+	<!-- For test service only -->
+    <!--  
+    <Button
+        android:id="@+id/stopServiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pluSearchView"
+        android:layout_below="@+id/startServiceButton"
+        android:gravity="center"
+        android:onClick="stopService"        
+        android:text="@string/stopServiceButton" />
+
+    <Button
+        android:id="@+id/startServiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stopServiceButton"
+        android:layout_below="@+id/pluSearchView"
+        android:gravity="center"
+        android:onClick="startService"
+        android:text="@string/startServiceButton" />
+    -->
+</RelativeLayout>
